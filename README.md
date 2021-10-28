@@ -44,15 +44,15 @@ Visual:
 - [ ] Animated page transitions:
 - `next/router`
 - `Framer-Motion`
-- [ ] Two user selectable themes (dark and light)
+- [x] Two user selectable themes (dark and light)
 - [ ] Timed popup modal (delayed 1 min)
 
 Feedback:
 
 Contact form modal
 
-- [ ] `Formik` (form state)
-- [ ] `Yup` (validation)
+- [x] `Formik` (form state)
+- [x] `Yup` (validation)
       Animated real-time validation feedback
 - [ ] `PHP` email backend
       Human screening:
