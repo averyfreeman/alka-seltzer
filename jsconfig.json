@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		"checkJs": false,
+		"resolveJsonModule": true,
+		"moduleResolution": "node",
+		"target": "es2020",
+		"module": "es2015",
+		"baseUrl": "src",
+		"paths": {
+			"components/*": ["src/components/*"],
+			"hooks/*": ["srchooks/*"],
+			"icons/*": ["src/icons/*"],
+			"lib/*": ["src/lib/*"],
+			"pages/*": ["src/pages/*"],
+			"styles/*": ["src/styles/*"],
+			"util/*": ["src/util/*"]
+		}
+	},
+	"include": ["src", "public"],
+	"exclude": [
+		"dist",
+		"node_modules",
+		"build",
+		".vscode",
+		"coverage",
+		".npm",
+		".yarn"
+	],
+	"typeAcquisition": {
+		"enable": true,
+		"include": ["nextjs", "react", "react-dom"]
+	}
+}

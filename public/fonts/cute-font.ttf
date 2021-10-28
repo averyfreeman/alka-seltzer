@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Cute Font';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/cutefont/v10/Noaw6Uny2oWPbSHMrY6vmA.ttf) format('truetype');
+}
