@@ -1,67 +1,67 @@
 @font-face {
 	font-family: 'Acme';
 	font-weight: 400;
-	src: url('/public/fonts/Acme-Regular.ttf');
+	src: url('/fonts/Acme-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Architects Daughter';
 	font-weight: 400;
-	src: url('/public/fonts/ArchitectsDaughter-Regular.ttf');
+	src: url('/fonts/ArchitectsDaughter-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Carter One';
 	font-weight: 400;
-	src: url('/public/fonts/CarterOne-Regular.ttf');
+	src: url('/fonts/CarterOne-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Courier Prime';
 	font-weight: 400;
-	src: url('/public/fonts/CourierPrime-Regular.ttf');
+	src: url('/fonts/CourierPrime-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Cute Font';
 	font-weight: 400;
-	src: url('/public/fonts/cute-font.ttf');
+	src: url('/fonts/cute-font.ttf');
 }
 
 @font-face {
 	font-family: 'Days One';
 	font-weight: 400;
-	src: url('/public/fonts/DaysOne-Regular.ttf');
+	src: url('/fonts/DaysOne-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Great Vibes';
 	font-weight: 400;
-	src: url('/public/fonts/GreatVibes-Regular.ttf');
+	src: url('/fonts/GreatVibes-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Josefin Sans';
 	font-weight: 400;
-	src: url('/public/fonts/JosefinSans-VariableFont_wght.ttf');
+	src: url('/fonts/JosefinSans-VariableFont_wght.ttf');
 }
 
 @font-face {
 	font-family: 'Permanent Marker';
 	font-weight: 400;
-	src: url('/public/fonts/permanent-marker.ttf');
+	src: url('/fonts/permanent-marker.ttf');
 }
 
 @font-face {
 	font-family: 'Righteous';
 	font-weight: 800;
-	src: url('/public/fonts/Righteous-Regular.ttf');
+	src: url('/fonts/Righteous-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Ubuntu';
 	font-weight: 400;
-	src: url('/public/fonts/Ubuntu-Regular.ttf');
+	src: url('/fonts/Ubuntu-Regular.ttf');
 }
 
 .acme {

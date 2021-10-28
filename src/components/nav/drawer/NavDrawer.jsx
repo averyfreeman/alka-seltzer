@@ -31,7 +31,6 @@ import DrawerButtons from 'components/nav/drawer/DrawerButtons';
 
 export default function NavDrawer(props) {
 	const { isOpen, onOpen, onClose } = useDisclosure();
-	/* eslint-disable no-unused-vars */
 	const btnRef = useRef();
 	const menuButtonColor = '#696969';
 	const menuButtonOutline = '#161616';

@@ -1,15 +1,7 @@
 import React from 'react';
 import { Box, Heading, Text } from '@chakra-ui/react';
 
-const HomeBanner = ({
-	bgColor,
-	className,
-	color,
-	subColor,
-	title,
-	subTitle,
-	...rest
-}) => {
+export default function HomeBanner(props) {
 	return (
 		<Box
 			mb="0"
@@ -17,7 +9,7 @@ const HomeBanner = ({
 			py="7"
 			align="center"
 			minW="100vw"
-			bgColor={bgColor}
+			bgColor={props.bgColor}
 			borderWidth="3px"
 			borderRadius="lg"
 			textShadow="5px 5px 8px black"
@@ -30,22 +22,20 @@ const HomeBanner = ({
 					as="h1"
 					size="xl"
 					sx={{ zIndex: 10 }}
-					fontSize={{ base: '5xl', sm: '7xl', md: '8xl', xl: '9xl' }}
-					color={color}
+					fontSize={props.titleSize}
+					color={props.color}
 					fontWeight={700}
-					className={className}
-					{...rest}
+					className={props.className}
+					{...props}
 				>
-					{title}
+					{props.title}
 					<Box>
-						<Text color={subColor} as="i">
-							{subTitle}
+						<Text color={props.subColor} as="i" fontSize={props.subTitleSize}>
+							{props.subTitle}
 						</Text>
 					</Box>
 				</Heading>
 			</Box>
 		</Box>
 	);
-};
-
-export default HomeBanner;
+}

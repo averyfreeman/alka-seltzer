@@ -9,32 +9,32 @@ const property = {
 	rating: 5,
 };
 
-const RatingStars = ({ bgColor, fontSize, ...rest }) => (
-	<Box
-		maxW="sm"
-		borderWidth="1px"
-		borderRadius="lg"
-		overflow="hidden"
-		p="5"
-		bgColor={bgColor}
-		{...rest}
-	>
-		<Text fontSize={fontSize}>Garden App Ratings:</Text>
-		<Box d="flex" mt="2" alignItems="center" justifyContent="center">
-			{Array(5)
-				.fill('')
-				.map((_, i) => (
-					<FontAwesomeIcon
-						icon={faStar}
-						key={i}
-						color={i < property.rating ? 'gold' : '#4A5568'}
-					/>
-				))}
-			<Box as="span" ml="2" fontSize="sm">
-				{property.reviewCount} reviews
+export default function RatingStars(props) {
+	return (
+		<Box
+			maxW="sm"
+			borderWidth="1px"
+			borderRadius="lg"
+			overflow="hidden"
+			p="5"
+			bgColor={props.bgColor}
+			{...props}
+		>
+			<Text fontSize={props.fontSize}>{props.heading}</Text>
+			<Box d="flex" mt="2" alignItems="center" justifyContent="center">
+				{Array(5)
+					.fill('')
+					.map((_, i) => (
+						<FontAwesomeIcon
+							icon={faStar}
+							key={i}
+							color={i < property.rating ? 'gold' : '#4A5568'}
+						/>
+					))}
+				<Box as="span" ml="2" fontSize="sm">
+					{property.reviewCount} reviews
+				</Box>
 			</Box>
 		</Box>
-	</Box>
-);
-
-export default RatingStars;
+	);
+}

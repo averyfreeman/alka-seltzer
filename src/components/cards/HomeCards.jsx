@@ -31,7 +31,7 @@ export default function HomeCards(props) {
 		mapIcon = calcIconSize(width, faMobileAlt);
 		resumeIcon = calcIconSize(width, faIdCard);
 		plantIcon = calcIconSize(width, faSeedling);
-		console.log(height, width);
+		// console.log(height, width);
 	}, [height, width]);
 
 	return (
@@ -39,27 +39,27 @@ export default function HomeCards(props) {
 			<SimpleGrid columns={{ base: 1, md: 2, '2xl': 4 }} spacing="5">
 				<HomeCard
 					title="About"
-					desc="Who am I, and why am I doing this?"
+					desc="What I do, why I do it"
 					icon={stackIcon}
-					href="/about"
+					href="/about/index"
 				/>
 				<HomeCard
 					title="Projects"
-					desc="What's this gardening app I keep hearing about?"
+					desc="Showcase of certain projects (other than GitHub)"
 					icon={mapIcon}
-					href="/projects"
+					href="/projects/index"
 				/>
 				<HomeCard
-					title="Garden Photos"
-					desc="A ton of photos I took, in a masonry grid layout"
+					title="Blog"
+					desc="How-to articles, rendered by React"
 					icon={plantIcon}
-					href="/garden"
+					href="/garden/index"
 				/>
 				<HomeCard
 					title="Resume"
-					desc="A resume page I whipped up using React"
+					desc="Seeing if I could whip up a resume using React"
 					icon={resumeIcon}
-					href="/resume"
+					href="/resume/index"
 				/>
 			</SimpleGrid>
 		</VStack>

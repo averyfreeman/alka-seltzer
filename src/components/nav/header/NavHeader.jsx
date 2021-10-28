@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
 	Circle,
 	Container,
@@ -14,15 +15,14 @@ import {
 	faIdCard,
 	faMobileAlt,
 } from '@fortawesome/free-solid-svg-icons';
-import NavButton from 'components/nav/header/NavButton';
+import NavHeadHomeBtn from 'components/nav/header/NavHeadHomeBtn';
+import NavHeadBtn from 'components/nav/header/NavHeadBtn';
 import NavColorSwitchButton from 'components/nav/header/NavColorSwitchButton';
 
 // TODO: add tooltips for menu buttons
 
-export default function MenuHeader(props) {
+export default function NavHeader(props) {
 	const bgColor = useColorModeValue('gray.700', 'gray.600');
-	const homeBgColor = useColorModeValue('gray.400', 'gray.800');
-	const circleBgColor = useColorModeValue('gray.500', 'black');
 	return (
 		<Container
 			bgColor={bgColor}
@@ -37,65 +37,41 @@ export default function MenuHeader(props) {
 				justify="space-between"
 				maxW="95%"
 			>
-				<NavLink to="/home">
-					<Square
-						bg={homeBgColor}
-						ml={0}
-						p={3}
-						borderTop="3px solid #666"
-						borderRight="3px solid #333"
-						borderBottom="3px solid #333"
-						borderLeft="3px solid #666"
-						boxShadow="2px 2px 4px #333"
-						height="4rem"
-						opacity="0.9"
-						_hover={{
-							opacity: 1,
-							transform: 'scale(1.001)',
-						}}
-						sx={{
-							transition: 'all 0.2s ease',
-						}}
-					>
-						<Circle bg={circleBgColor} height="4rem" width="4rem">
-							<FontAwesomeIcon icon={faHouseUser} size="3x" />
-						</Circle>
-					</Square>
-				</NavLink>
-				<NavButton
+				<NavHeadHomeBtn />
+				<NavHeadBtn
 					className="cute-font"
 					fontSize="2xl"
 					icon={<FontAwesomeIcon icon={faUserCog} size="2x" />}
 					label="About"
 					ml={{ base: 0, md: 2 }}
-					to="/about"
+					to="/about/page"
 					width={{ base: '5rem', lg: '10rem' }}
 				/>
-				<NavButton
+				<NavHeadBtn
 					className="cute-font"
 					fontSize="2xl"
 					icon={<FontAwesomeIcon icon={faMobileAlt} size="2x" />}
 					label="Projects"
 					ml={0}
-					to="/projects"
+					to="/projects/page"
 					width={{ base: '5rem', lg: '10rem' }}
 				/>
-				<NavButton
+				<NavHeadBtn
 					className="cute-font"
 					fontSize="2xl"
 					icon={<FontAwesomeIcon icon={faSeedling} size="2x" />}
-					label="Garden"
+					label="Blog"
 					ml={{ base: 0, md: 2 }}
-					to="/garden"
+					to="/blog/page"
 					width={{ base: '5rem', lg: '10rem' }}
 				/>
-				<NavButton
+				<NavHeadBtn
 					className="cute-font"
 					fontSize="2xl"
 					icon={<FontAwesomeIcon icon={faIdCard} size="2x" />}
 					label="Resume"
 					ml={{ base: 0, md: 2 }}
-					to="/resume"
+					to="/resume/page"
 					width={{ base: '5rem', lg: '10rem' }}
 				/>
 				<NavColorSwitchButton
