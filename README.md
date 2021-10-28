@@ -24,19 +24,12 @@ Attention given to ...
 
 - How about a fun little TODO list
 
-Environment:
+[ Environment ]:
 
 - Javascript (`es6+`, `webpack`, `babel`)
 - NextJS React-based SSR framework (...so good...)
 
-Blog:
-
-- [ ] blog front-end for 'headless `wordpress`'
-- [ ] `OAuth2` authentication
-- [ ] `WP`-connected comment system
-- [ ] `highlight.js` decorated codeblocks
-
-Visual:
+[ User interface ]:
 
 - [x] Responsive theme (5 breakpoints)
 - [x] UI kit: `@Chakra-ui/React`
@@ -47,18 +40,24 @@ Visual:
 - [x] Two user selectable themes (dark and light)
 - [ ] Timed popup modal (delayed 1 min)
 
-Feedback:
+[ React-rendering WordPress content ]:
 
-Contact form modal
+- [ ] blog front-end for 'headless `wordpress`'
+- [ ] `OAuth2` authentication
+- [ ] `WP`-connected comment system
+- [ ] `highlight.js` decorated codeblocks
 
+[ Feedback ]:
+
+- [x] Contact form modal
 - [x] `Formik` (form state)
 - [x] `Yup` (validation)
-      Animated real-time validation feedback
+- [x] Animated real-time validation feedback
 - [ ] `PHP` email backend
-      Human screening:
+      "Real person" screening:
 - [ ] `Google captcha`
 
-User info:
+[ Info for users ]:
 
 Service region:
 
