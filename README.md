@@ -4,7 +4,7 @@
 
 ---
 
-# (soon) see it @ [https://averyfreeman.com](https://averyfreeman.com)
+#### (soon) see it @ [https://averyfreeman.com](https://averyfreeman.com)
 
 Regardless of the person, most everyone requires a well designed site these days explaining who they are, what they do, and why you should be interested.
 
@@ -34,9 +34,7 @@ Attention given to ...
 - [x] Responsive theme (5 breakpoints)
 - [x] UI kit: `@Chakra-ui/React`
 - [ ] JSS: `@emotion/styled-system`
-- [ ] Animated page transitions:
-- `next/router`
-- `Framer-Motion`
+- [ ] Animated page transitions using `next/router` with `Framer-Motion`
 - [x] Two user selectable themes (dark and light)
 - [ ] Timed popup modal (delayed 1 min)
 
